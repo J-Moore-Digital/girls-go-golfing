@@ -31,3 +31,14 @@
 .btn-light:hover {
   background: #ffffff;
 }
+
+.btn-light:disabled {
+  opacity: 0.8;
+  cursor: not-allowed;
+}
+
+.cta-error {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: #ffe2e8;
+}

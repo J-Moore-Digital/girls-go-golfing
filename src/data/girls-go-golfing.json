@@ -113,6 +113,7 @@
     "title": "Ready to Play With Women Who Match Your Pace?",
     "subtitle": "Share a few details and we'll introduce you to a local group that fits your schedule, skill level, and goals.",
     "button_text": "Join Girls Go Golfing",
-    "button_link": "#contact"
+    "button_link": "stripe_checkout",
+    "checkout_plan": "annual"
   }
 }
