@@ -5,8 +5,8 @@
     "logo_svg": "/logos/GGG-logo.png",
     "phone": "(801) 555-0448",
     "email": "hello@girlsgogolfing.com",
-    "address": "Salt Lake City, UT",
-    "hours": "Community Tee Times: Mon-Sun, 7:00am-7:00pm",
+    "address": "Northern UT",
+    "hours": "Mon-Sun, 7:00am-7:00pm",
     "social": {
       "facebook": "",
       "instagram": "https://instagram.com/girlsgogolfing",
@@ -38,12 +38,12 @@
     "contact_phone_label": "Call or Text",
     "contact_email_label": "Email",
     "contact_address_label": "Network Location",
-    "contact_hours_label": "Tee Time Windows",
+    "contact_hours_label": "Contact Hours",
     "form_name_placeholder": "Your Name",
     "form_email_placeholder": "Your Email",
-    "form_subject_placeholder": "I'd like to join a group",
-    "form_message_placeholder": "Tell us your experience level, preferred days, and what kind of playing group you'd enjoy.",
-    "form_submit": "Match Me With a Group",
+    "form_subject_placeholder": "Subject",
+    "form_message_placeholder": "Ask us a question or share your experience.",
+    "form_submit": "Send Message",
     "form_submitting": "Sending..."
   },
   "theme": {
@@ -58,7 +58,7 @@
     "subheadline": "A professional network dedicated to increasing visibility, participation, and inclusivity on the green for women and girls everywhere.",
     "cta_text": "Join the Network",
     "cta_link": "#membership",
-    "background_image": "/images/image4.png"
+    "background_image": "/images/image4.jpg"
   },
   "about": {
     "title": "Our Mission",
@@ -108,7 +108,7 @@
     "/images/image1.jpg",
     "/images/image2.jpg",
     "/images/image3.jpg",
-    "/images/image4.png"
+    "/images/image4.jpg"
   ],
   "membership": {
     "title": "Membership That Moves Your Game and Network Forward",

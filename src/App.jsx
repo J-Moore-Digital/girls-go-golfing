@@ -6,7 +6,6 @@ import About from './components/About';
 import Services from './components/Services';
 import Gallery from './components/Gallery';
 import Testimonials from './components/Testimonials';
-import CTASection from './components/CTASection';
 import Membership from './components/Membership';
 import Contact from './components/Contact';
 import GolfFooter from './components/GolfFooter';
@@ -46,9 +45,9 @@ function App() {
 
     root.style.setProperty('--primary-color', theme.primary_color || '#F7A8B8');
     root.style.setProperty('--secondary-color', theme.secondary_color || '#2E5D43');
-    root.style.setProperty('--accent-color', theme.accent_color || '#6BB96F');
-    root.style.setProperty('--accent-lavender', theme.lavender_color || '#DBB4E2');
-    root.style.setProperty('--accent-yellow', theme.pastel_yellow_color || '#FFF3B0');
+    root.style.setProperty('--accent-color', theme.accent_color || '#a3d1a6');
+    root.style.setProperty('--accent-lavender', theme.lavender_color || '#e0c5e4');
+    root.style.setProperty('--accent-yellow', theme.pastel_yellow_color || '#fffbe5');
   }, []);
 
   useEffect(() => {
@@ -132,7 +131,6 @@ function App() {
         {hasGallery && <Gallery images={siteData.gallery} labels={labels} />}
         <Testimonials data={siteData.testimonials} labels={labels} />
         <Membership data={siteData.membership} />
-        <CTASection data={siteData.cta_section} />
         <Contact
           business={siteData.business}
           contactForm={siteData.contact_form}
