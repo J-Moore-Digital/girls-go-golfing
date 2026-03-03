@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Montserrat:wght@500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #f7a8b8;
+  --secondary-color: #2e5d43;
+  --accent-color: #6bb96f;
+  --bg-color: #f5f5f5;
+  --surface-color: #ffffff;
+  --surface-alt-color: #f5f5f5;
+  --gallery-bg: linear-gradient(180deg, #f5f5f5 0%, #ffffff 100%);
+  --text-color: #1d231f;
+  --muted-text: #58645d;
+  --border-color: #d6dfd8;
+  --nav-bg: rgba(248, 251, 248, 0.82);
+  --nav-border: rgba(29, 35, 31, 0.12);
+  --hero-overlay-a: rgba(12, 16, 13, 0.58);
+  --hero-overlay-b: rgba(20, 29, 22, 0.5);
+  --hero-overlay-glow: rgba(247, 168, 184, 0.26);
+  --card-bg: linear-gradient(160deg, rgba(255, 255, 255, 0.95), rgba(247, 251, 248, 0.95));
+  --accent-lavender: #dbb4e2;
+  --accent-yellow: #fff3b0;
+  --font-display: 'Montserrat', 'Avenir Next', 'Segoe UI', sans-serif;
+  --font-body: 'Manrope', 'Avenir Next', 'Segoe UI', sans-serif;
+  --font-script: 'Brittany Signature', 'Playlist Script', 'Brush Script MT', 'Lucida Handwriting', cursive;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  line-height: 1.65;
+  color: var(--text-color);
+  background: #f5f5f5;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+section {
+  padding: 5.2rem 1.4rem;
+}
+
+.container {
+  width: min(1160px, 100%);
+  margin: 0 auto;
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  text-align: center;
+  font-size: clamp(1.75rem, 4.4vw, 2.9rem);
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+  margin-bottom: 2.6rem;
+  color: var(--secondary-color);
+}
+
+.script-accent {
+  font-family: var(--font-script);
+  font-weight: 500;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.92rem 1.7rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 0.95rem;
+  letter-spacing: 0.01em;
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    color-mix(in srgb, var(--primary-color) 55%, var(--accent-yellow))
+  );
+  color: #1f2520;
+  box-shadow: 0 14px 34px rgba(14, 20, 15, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 36px rgba(14, 20, 15, 0.32);
+  filter: brightness(1.02);
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 0.95rem 0;
+  background: var(--nav-bg);
+  border-bottom: 1px solid var(--nav-border);
+  backdrop-filter: blur(12px);
+  transition: all 0.25s ease;
+}
+
+nav.scrolled {
+  padding: 0.55rem 0;
+  box-shadow: 0 14px 34px rgba(16, 24, 18, 0.12);
+}
+
+nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 310px;
+  height: 84px;
+  object-fit: contain;
+  transition: all 0.25s ease;
+}
+
+nav.scrolled .logo img {
+  width: 255px;
+  height: 64px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+  margin-right: 1.4rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.01em;
+  opacity: 0.88;
+  transition: all 0.2s ease;
+}
+
+nav ul li a:hover {
+  color: color-mix(in srgb, var(--secondary-color) 70%, var(--accent-color));
+  opacity: 1;
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.mobile-menu span {
+  width: 25px;
+  height: 2px;
+  border-radius: 999px;
+  background: var(--secondary-color);
+  transition: all 0.25s ease;
+}
+
+.mobile-menu.active span:nth-child(1) {
+  transform: rotate(45deg) translate(4px, 4px);
+}
+
+.mobile-menu.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-menu.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  nav .container {
+    padding: 0 1rem;
+  }
+
+  .logo img {
+    width: 212px;
+    height: 58px;
+  }
+
+  nav ul {
+    position: fixed;
+    right: -100%;
+    top: 0;
+    width: min(82%, 320px);
+    height: 100vh;
+    padding: 6.2rem 1.3rem 1.3rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    background: #f8fbf8;
+    border-left: 1px solid rgba(31, 37, 32, 0.1);
+    box-shadow: -12px 0 30px rgba(11, 15, 12, 0.12);
+    transition: right 0.22s ease;
+    z-index: 999;
+  }
+
+  nav ul.active {
+    right: 0;
+  }
+
+  nav ul li {
+    width: 100%;
+    border-bottom: 1px solid rgba(31, 37, 32, 0.08);
+    padding: 0.9rem 0;
+  }
+
+  nav ul li:last-child {
+    border-bottom: 0;
+  }
+
+  .mobile-menu {
+    display: flex;
+    z-index: 1001;
+  }
+}

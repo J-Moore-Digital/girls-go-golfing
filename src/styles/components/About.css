@@ -1,0 +1,135 @@
+.about {
+  padding-top: 2.5rem;
+}
+
+.about-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(420px, 0.95fr);
+  align-items: stretch;
+  gap: 0;
+}
+
+.about-panel {
+  background: var(--accent-color);
+  padding: clamp(2rem, 6vw, 5.2rem);
+  padding-right: clamp(2rem, 4vw, 4rem);
+  margin-top: 2.2rem;
+  margin-right: -3.2rem;
+  margin-bottom: 2.2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.about-kicker {
+  font-family: var(--font-script);
+  font-size: clamp(1.4rem, 3.2vw, 2rem);
+  letter-spacing: 0.01em;
+  font-weight: 500;
+  margin-bottom: 1.4rem;
+}
+
+.about-panel h2 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(2rem, 5vw, 4.1rem);
+  line-height: 0.98;
+  letter-spacing: -0.03em;
+  margin-bottom: 1.6rem;
+  color: var(--secondary-color);
+}
+
+.about-copy {
+  font-size: clamp(1.08rem, 2.5vw, 1.18rem);
+  line-height: 1.45;
+  color: #1f2520;
+  max-width: 34ch;
+  margin-bottom: 2.2rem;
+}
+
+.about-link {
+  display: inline-flex;
+  padding: 0.95rem 2rem;
+  border: 2px solid var(--primary-color);
+  font-family: var(--font-script);
+  font-size: 1.7rem;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--secondary-color);
+  background: #f5f5f5;
+  max-width: 260px;
+}
+
+.about-media {
+  min-height: 680px;
+}
+
+.about-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+  .about {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .about-layout {
+    position: relative;
+    grid-template-columns: 1fr;
+    gap: 0;
+    min-height: 560px;
+    overflow: hidden;
+  }
+
+  .about-panel {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    z-index: 2;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 100%;
+    background: color-mix(in srgb, var(--accent-color) 88%, #ffffff);
+  }
+
+  .about-copy {
+    max-width: none;
+  }
+
+  .about-media {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .about-layout {
+    min-height: 500px;
+  }
+
+  .about-panel {
+    max-width: 100%;
+  }
+
+  .about-link {
+    width: 100%;
+    max-width: 260px;
+    justify-content: center;
+    align-self: center;
+  }
+
+  .about-media {
+    min-height: 0;
+  }
+}

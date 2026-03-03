@@ -1,0 +1,77 @@
+.golf-footer {
+  background: #111814;
+  color: rgba(255, 255, 255, 0.92);
+  padding: 2.2rem 1.4rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.golf-footer .container {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.golf-footer-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.golf-footer-brand h3 {
+  font-family: var(--font-display);
+  margin-bottom: 0.26rem;
+}
+
+.golf-footer-brand p {
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.golf-footer-contact-links {
+  display: grid;
+  gap: 0.3rem;
+  text-align: right;
+}
+
+.golf-footer-contact-links a {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+}
+
+.golf-footer-contact-links a:hover {
+  color: #ffffff;
+}
+
+.social-links {
+  display: flex;
+  gap: 0.85rem;
+  margin-bottom: 0.9rem;
+}
+
+.social-links a {
+  width: 2.1rem;
+  height: 2.1rem;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+  font-size: 1rem;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.08);
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.social-links a:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.17);
+}
+
+@media (max-width: 768px) {
+  .golf-footer-top {
+    flex-direction: column;
+  }
+
+  .golf-footer-contact-links {
+    text-align: left;
+  }
+}

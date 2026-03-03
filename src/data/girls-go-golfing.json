@@ -1,0 +1,118 @@
+{
+  "business": {
+    "name": "Girls Go Golfing",
+    "tagline": "Empowering the Next Generation of Women Golfers",
+    "logo_svg": "/logos/GGG-logo.png",
+    "phone": "(801) 555-0448",
+    "email": "hello@girlsgogolfing.com",
+    "address": "Salt Lake City, UT",
+    "hours": "Community Tee Times: Mon-Sun, 7:00am-7:00pm",
+    "social": {
+      "facebook": "",
+      "instagram": "https://instagram.com/girlsgogolfing",
+      "twitter": ""
+    }
+  },
+  "seo": {
+    "description": "Girls Go Golfing is a local women's golf network that matches players by pace and skill level, hosts beginner-friendly tee times, and builds lasting community on and off the course.",
+    "og_image": "/images/image3.jpg",
+    "schema_type": "SportsOrganization"
+  },
+  "contact_form": {
+    "enabled": true,
+    "endpoint": "",
+    "method": "POST",
+    "success_message": "Thanks for reaching out. We'll follow up soon with your best-fit group and upcoming tee times.",
+    "error_message": "We could not send your message right now. Please email us directly."
+  },
+  "ui_labels": {
+    "nav_about": "Our Mission",
+    "nav_services": "How It Works",
+    "nav_gallery": "On the Course",
+    "nav_testimonials": "Member Stories",
+    "nav_contact": "Join Us",
+    "gallery_title": "On the Course",
+    "testimonials_title": "What Members Are Saying",
+    "contact_title": "Join the Movement",
+    "contact_phone_label": "Call or Text",
+    "contact_email_label": "Email",
+    "contact_address_label": "Network Location",
+    "contact_hours_label": "Tee Time Windows",
+    "form_name_placeholder": "Your Name",
+    "form_email_placeholder": "Your Email",
+    "form_subject_placeholder": "I'd like to join a group",
+    "form_message_placeholder": "Tell us your experience level, preferred days, and what kind of playing group you'd enjoy.",
+    "form_submit": "Match Me With a Group",
+    "form_submitting": "Sending..."
+  },
+  "theme": {
+    "primary_color": "#F7A8B8",
+    "secondary_color": "#2E5D43",
+    "accent_color": "#6BB96F",
+    "lavender_color": "#DBB4E2",
+    "pastel_yellow_color": "#FFF3B0"
+  },
+  "hero": {
+    "headline": "Empowering the Next Generation of Women Golfers",
+    "subheadline": "A professional network dedicated to increasing visibility, participation, and inclusivity on the green for women and girls everywhere.",
+    "cta_text": "Find My Group",
+    "cta_link": "#contact",
+    "background_image": "/images/image4.png"
+  },
+  "about": {
+    "title": "Our Mission",
+    "content": "We are a dedicated network of women and girls committed to breaking barriers in golf. By fostering local connections and building welcoming foursomes, we increase visibility and ensure every woman feels empowered and included on the green.",
+    "image": "/images/image4.png"
+  },
+  "services": {
+    "title": "The Power of the Network",
+    "intro": "Joining Girls Go Golfing means being part of a movement that prioritizes visibility, community, and professional growth. We create the space for women to thrive both on and off the course.",
+    "items": [
+      {
+        "name": "Inclusive Community",
+        "description": "A welcoming environment designed for women and girls of all skill levels, from beginners to experienced players."
+      },
+      {
+        "name": "Women's Foursomes",
+        "description": "Facilitating local foursomes that increase visibility, confidence, and support on every course."
+      },
+      {
+        "name": "Local Networking",
+        "description": "Connect with ambitious women through golf and build relationships that support personal and professional growth."
+      },
+      {
+        "name": "National Access",
+        "description": "Enjoy partner-course access, broader event opportunities, and a growing network that extends beyond your city."
+      }
+    ]
+  },
+  "testimonials": [
+    {
+      "text": "I moved to Salt Lake and found a group in one week. I went from playing alone to having a regular foursome.",
+      "author": "Megan T.",
+      "rating": 5
+    },
+    {
+      "text": "As a true beginner, I was nervous at first. The group made me feel comfortable from day one, and now I actually look forward to tee times.",
+      "author": "Sofia L.",
+      "rating": 5
+    },
+    {
+      "text": "The consistency is what changed everything for me. Weekly rounds and clinics helped my game and gave me an amazing circle of golf friends.",
+      "author": "Rachel B.",
+      "rating": 5
+    }
+  ],
+  "gallery": [
+    "/images/image1.jpg",
+    "/images/image2.jpg",
+    "/images/image3.jpg",
+    "/images/image4.png"
+  ],
+  "cta_section": {
+    "title": "Ready to Play With Women Who Match Your Pace?",
+    "subtitle": "Share a few details and we'll introduce you to a local group that fits your schedule, skill level, and goals.",
+    "button_text": "Join Girls Go Golfing",
+    "button_link": "#contact"
+  }
+}
