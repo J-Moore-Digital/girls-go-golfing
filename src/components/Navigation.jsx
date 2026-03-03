@@ -62,6 +62,7 @@ export default function Navigation({ business, labels, hasGallery }) {
         <ul className={isMenuOpen ? 'active' : ''}>
           <li><a href="#about" onClick={(e) => scrollToSection(e, '#about')}>{labels.nav_about}</a></li>
           <li><a href="#services" onClick={(e) => scrollToSection(e, '#services')}>{labels.nav_services}</a></li>
+          <li><a href="#membership" onClick={(e) => scrollToSection(e, '#membership')}>{labels.nav_membership || 'Membership'}</a></li>
           {hasGallery && (
             <li>
               <a href="#gallery" onClick={(e) => scrollToSection(e, '#gallery')}>

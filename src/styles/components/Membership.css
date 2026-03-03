@@ -1,0 +1,133 @@
+.membership {
+  background: linear-gradient(180deg, var(--accent-yellow) 0%, var(--surface-alt-color) 60%);
+}
+
+.membership-kicker {
+  font-family: var(--font-script);
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  color: var(--secondary-color);
+  margin-bottom: 0.3rem;
+}
+
+.membership h2 {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 4rem);
+  line-height: 0.96;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+.membership-subtitle {
+  max-width: 68ch;
+  color: #48554e;
+  margin-bottom: 2rem;
+}
+
+.membership-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.membership-benefit-card {
+  border: 1px solid color-mix(in srgb, var(--secondary-color) 30%, #ffffff);
+  background: #ffffff;
+  padding: 1.25rem;
+}
+
+.membership-benefit-card h3 {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: var(--secondary-color);
+}
+
+.membership-benefit-card p {
+  color: #54615a;
+}
+
+.membership-plans-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.membership-plan-card {
+  background: #ffffff;
+  border: 1px solid color-mix(in srgb, var(--secondary-color) 32%, #ffffff);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.membership-plan-badge {
+  width: fit-content;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--secondary-color);
+  background: color-mix(in srgb, var(--accent-yellow) 72%, #ffffff);
+}
+
+.membership-plan-card h3 {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  color: var(--secondary-color);
+}
+
+.membership-plan-price {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  color: var(--secondary-color);
+}
+
+.membership-plan-interval {
+  color: #50615a;
+  margin-top: -0.35rem;
+}
+
+.membership-plan-description {
+  color: #43524b;
+}
+
+.membership-plan-card ul {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: #4d5b54;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.membership-plan-card .btn {
+  margin-top: auto;
+  width: fit-content;
+  max-width: 260px;
+}
+
+.membership-error {
+  margin-top: 1rem;
+  color: #b42318;
+  font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+  .membership-benefits-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .membership-benefits-grid,
+  .membership-plans-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .membership-plan-card .btn {
+    width: 100%;
+  }
+}

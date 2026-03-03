@@ -1,0 +1,15 @@
+[
+  {
+    "id": "member_1772576051898",
+    "email": "jmoore.digital@gmail.com",
+    "customerId": "cus_U5BZN1WJKsGZ0z",
+    "subscriptionId": "sub_1T71CcAZHaBdqQ31n39ysNdJ",
+    "plan": "annual",
+    "status": "active",
+    "lastEvent": "customer.subscription.updated",
+    "updatedAt": "2026-03-03T22:14:13.565Z",
+    "createdAt": "2026-03-03T22:14:11.898Z",
+    "currentPeriodEnd": null,
+    "cancelAtPeriodEnd": false
+  }
+]

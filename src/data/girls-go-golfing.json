@@ -28,6 +28,7 @@
   "ui_labels": {
     "nav_about": "Our Mission",
     "nav_services": "How It Works",
+    "nav_membership": "Membership",
     "nav_gallery": "On the Course",
     "nav_testimonials": "Member Stories",
     "nav_contact": "Join Us",
@@ -55,14 +56,14 @@
   "hero": {
     "headline": "Empowering the Next Generation of Women Golfers",
     "subheadline": "A professional network dedicated to increasing visibility, participation, and inclusivity on the green for women and girls everywhere.",
-    "cta_text": "Find My Group",
-    "cta_link": "#contact",
+    "cta_text": "Join the Network",
+    "cta_link": "#membership",
     "background_image": "/images/image4.png"
   },
   "about": {
     "title": "Our Mission",
     "content": "We are a dedicated network of women and girls committed to breaking barriers in golf. By fostering local connections and building welcoming foursomes, we increase visibility and ensure every woman feels empowered and included on the green.",
-    "image": "/images/image4.png"
+    "image": "/images/image2.jpg"
   },
   "services": {
     "title": "The Power of the Network",
@@ -109,11 +110,58 @@
     "/images/image3.jpg",
     "/images/image4.png"
   ],
+  "membership": {
+    "title": "Membership That Moves Your Game and Network Forward",
+    "subtitle": "Join Girls Go Golfing to access curated groups, structured play opportunities, and a professional community built around confidence and connection.",
+    "benefits": [
+      {
+        "title": "Curated Local Groups",
+        "description": "Get matched into groups based on skill level, goals, and schedule so every round feels supportive and intentional."
+      },
+      {
+        "title": "Priority Events + Clinics",
+        "description": "Members get first access to tee-time meetups, coaching clinics, and special events throughout the season."
+      },
+      {
+        "title": "Professional Network Access",
+        "description": "Build meaningful relationships with women across industries while sharing the course and growing your confidence."
+      }
+    ],
+    "plans": [
+      {
+        "name": "Annual Membership",
+        "badge": "Best Value",
+        "price": "$100",
+        "interval": "per year",
+        "description": "The best value for committed members who want consistent play and access all year long.",
+        "features": [
+          "Full community access",
+          "Priority event registration",
+          "Member-only partner offers",
+          "Discounted clinic pricing"
+        ],
+        "plan_key": "annual",
+        "button_text": "Join Annual Plan"
+      },
+      {
+        "name": "Monthly Membership",
+        "price": "$12",
+        "interval": "per month",
+        "description": "A flexible option for members who want to join now and scale participation over time.",
+        "features": [
+          "Full community access",
+          "Monthly billing flexibility",
+          "Priority event registration"
+        ],
+        "plan_key": "monthly",
+        "button_text": "Join Monthly Plan"
+      }
+    ]
+  },
   "cta_section": {
     "title": "Ready to Play With Women Who Match Your Pace?",
-    "subtitle": "Share a few details and we'll introduce you to a local group that fits your schedule, skill level, and goals.",
-    "button_text": "Join Girls Go Golfing",
-    "button_link": "stripe_checkout",
-    "checkout_plan": "annual"
+    "subtitle": "Explore membership options and choose the plan that fits your goals.",
+    "button_text": "View Membership Options",
+    "button_link": "#membership"
   }
 }

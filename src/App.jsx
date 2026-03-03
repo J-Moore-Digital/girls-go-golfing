@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import siteData from './data/girls-go-golfing.json';
 import Navigation from './components/Navigation';
 import Hero from './components/Hero';
@@ -7,6 +7,7 @@ import Services from './components/Services';
 import Gallery from './components/Gallery';
 import Testimonials from './components/Testimonials';
 import CTASection from './components/CTASection';
+import Membership from './components/Membership';
 import Contact from './components/Contact';
 import GolfFooter from './components/GolfFooter';
 import './styles/globals.css';
@@ -33,6 +34,12 @@ function upsertMeta(selector, attrs, content) {
 }
 
 function App() {
+  const [checkoutStatus, setCheckoutStatus] = useState(() => {
+    if (typeof window === 'undefined') return '';
+    const checkout = new URLSearchParams(window.location.search).get('checkout');
+    return checkout === 'success' || checkout === 'cancelled' ? checkout : '';
+  });
+
   useEffect(() => {
     const theme = siteData.theme || {};
     const root = document.documentElement;
@@ -43,6 +50,17 @@ function App() {
     root.style.setProperty('--accent-lavender', theme.lavender_color || '#DBB4E2');
     root.style.setProperty('--accent-yellow', theme.pastel_yellow_color || '#FFF3B0');
   }, []);
+
+  useEffect(() => {
+    if (!checkoutStatus) return;
+
+    const params = new URLSearchParams(window.location.search);
+    params.delete('checkout');
+    params.delete('session_id');
+    const cleanQuery = params.toString();
+    const cleanUrl = `${window.location.pathname}${cleanQuery ? `?${cleanQuery}` : ''}${window.location.hash}`;
+    window.history.replaceState({}, '', cleanUrl);
+  }, [checkoutStatus]);
 
   useEffect(() => {
     const business = siteData.business || {};
@@ -93,12 +111,27 @@ function App() {
     <>
       <div id="top"></div>
       <Navigation business={siteData.business} labels={labels} hasGallery={hasGallery} />
+      {checkoutStatus && (
+        <div className={`checkout-banner ${checkoutStatus}`}>
+          <div className="container checkout-banner-inner">
+            <p>
+              {checkoutStatus === 'success'
+                ? 'Test payment successful. Stripe checkout returned correctly.'
+                : 'Checkout was cancelled. No payment was made.'}
+            </p>
+            <button type="button" onClick={() => setCheckoutStatus('')}>
+              Dismiss
+            </button>
+          </div>
+        </div>
+      )}
       <main>
         <Hero data={siteData.hero} />
         <About data={siteData.about} />
         <Services data={siteData.services} />
         {hasGallery && <Gallery images={siteData.gallery} labels={labels} />}
         <Testimonials data={siteData.testimonials} labels={labels} />
+        <Membership data={siteData.membership} />
         <CTASection data={siteData.cta_section} />
         <Contact
           business={siteData.business}
