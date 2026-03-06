@@ -3,6 +3,7 @@ import siteData from './data/girls-go-golfing.json';
 import Navigation from './components/Navigation';
 import Hero from './components/Hero';
 import About from './components/About';
+import FounderNote from './components/FounderNote';
 import Services from './components/Services';
 import Gallery from './components/Gallery';
 import Testimonials from './components/Testimonials';
@@ -127,16 +128,17 @@ function App() {
       <main>
         <Hero data={siteData.hero} />
         <About data={siteData.about} />
+        <FounderNote data={siteData.founder_note} />
         <Services data={siteData.services} />
         {hasGallery && <Gallery images={siteData.gallery} labels={labels} />}
         <Testimonials data={siteData.testimonials} labels={labels} />
         <Membership data={siteData.membership} />
-        <Contact
+        {/* <Contact
           business={siteData.business}
           contactForm={siteData.contact_form}
           businessType="golf-course"
           labels={labels}
-        />
+        /> */}
       </main>
       <GolfFooter business={siteData.business} />
     </>

@@ -2,11 +2,9 @@ import '../styles/components/GolfFooter.css';
 
 function SocialLinks({ social }) {
   const socialIcons = {
-    facebook: '📘',
-    instagram: '📷',
-    twitter: '🐦',
-    linkedin: '💼',
-    youtube: '📹',
+    facebook: '/icons/facebook.png',
+    instagram: '/icons/instagram.png',
+    twitter: '/icons/twitter.png',
   };
 
   return (
@@ -21,7 +19,15 @@ function SocialLinks({ social }) {
             rel="noopener noreferrer"
             title={platform.charAt(0).toUpperCase() + platform.slice(1)}
           >
-            {socialIcons[platform] || '🔗'}
+            {socialIcons[platform] ? (
+              <img
+                src={socialIcons[platform]}
+                alt={`${platform} icon`}
+                className="social-icon-img"
+              />
+            ) : (
+              '🔗'
+            )}
           </a>
         );
       })}
@@ -37,7 +43,9 @@ export default function GolfFooter({ business }) {
       <div className="container">
         <div className="golf-footer-top">
           <div className="golf-footer-brand">
-            <h3>{business.name}</h3>
+            <a href="#" className="footer-logo" onClick={(e) => scrollToSection(e, '#top')}>
+              <img src={business.logo_svg} alt={`${business.name}`} />
+            </a>
             <p>{business.address}</p>
           </div>
           <div className="golf-footer-contact-links">

@@ -77,7 +77,7 @@ export default function Navigation({ business, labels, hasGallery }) {
           className={`mobile-menu ${isMenuOpen ? 'active' : ''}`}
           onClick={toggleMenu}
         >
-          <span></span>
+          <span className='mobile-menu-icon'></span>
           <span></span>
           <span></span>
         </div>

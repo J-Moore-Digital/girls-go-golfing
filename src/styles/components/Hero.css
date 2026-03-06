@@ -87,7 +87,6 @@
 
   .hero-layout {
     grid-template-columns: 1fr;
-    gap: 0.9rem;
   }
 
   .hero-media {
@@ -97,6 +96,7 @@
 
   .hero-copy {
     margin: 0;
+    margin-top: -10rem;
     border-radius: 14px;
     padding: 1.35rem;
   }

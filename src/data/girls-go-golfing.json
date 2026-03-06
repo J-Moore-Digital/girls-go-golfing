@@ -1,20 +1,20 @@
 {
   "business": {
     "name": "Girls Go Golfing",
-    "tagline": "Empowering the Next Generation of Women Golfers",
+    "tagline": "WE BELONG HERE",
     "logo_svg": "/logos/GGG-logo.png",
     "phone": "(801) 555-0448",
     "email": "hello@girlsgogolfing.com",
-    "address": "Northern UT",
-    "hours": "Mon-Sun, 7:00am-7:00pm",
+    "address": "Utah",
+    "hours": "Open tee times weekly • Meet & Golf: 2nd Friday monthly",
     "social": {
-      "facebook": "",
+      "facebook": "https://www.facebook.com/groups/1254440295062449/",
       "instagram": "https://instagram.com/girlsgogolfing",
-      "twitter": ""
+      "twitter": "https://x.com/girlsgogolfing"
     }
   },
   "seo": {
-    "description": "Girls Go Golfing is a local women's golf network that matches players by pace and skill level, hosts beginner-friendly tee times, and builds lasting community on and off the course.",
+    "description": "Girls Go Golfing Utah is a safe, inclusive women's golf network founded by Jan Brownstein to fill open tee times, build confidence, and grow the game through community play, events, and podcast storytelling.",
     "og_image": "/images/image3.jpg",
     "schema_type": "SportsOrganization"
   },
@@ -27,14 +27,14 @@
   },
   "ui_labels": {
     "nav_about": "Our Mission",
-    "nav_services": "How It Works",
+    "nav_services": "What We Offer",
     "nav_membership": "Membership",
-    "nav_gallery": "On the Course",
+    "nav_gallery": "Gallery",
     "nav_testimonials": "Member Stories",
-    "nav_contact": "Join Us",
+    "nav_contact": "Contact Us",
     "gallery_title": "On the Course",
     "testimonials_title": "What Members Are Saying",
-    "contact_title": "Join the Movement",
+    "contact_title": "Join the Game",
     "contact_phone_label": "Call or Text",
     "contact_email_label": "Email",
     "contact_address_label": "Network Location",
@@ -54,36 +54,52 @@
     "pastel_yellow_color": "#FFF3B0"
   },
   "hero": {
-    "headline": "Empowering the Next Generation of Women Golfers",
-    "subheadline": "A professional network dedicated to increasing visibility, participation, and inclusivity on the green for women and girls everywhere.",
-    "cta_text": "Join the Network",
+    "headline": "WE BELONG HERE",
+    "subheadline": "Founded in Utah to make golf more connected and less intimidating, Girls Go Golfing helps women meet, fill open tee times, and build real on-course confidence together.",
+    "cta_text": "Join the Game",
     "cta_link": "#membership",
     "background_image": "/images/image4.jpg"
   },
   "about": {
-    "title": "Our Mission",
-    "content": "We are a dedicated network of women and girls committed to breaking barriers in golf. By fostering local connections and building welcoming foursomes, we increase visibility and ensure every woman feels empowered and included on the green.",
+    "title": "What Is GGG?",
+    "content": "After searching for a real network for women golfers in Utah and finding none, Jan Brownstein created Girls Go Golfing in November 2021. GGG is a safe, friendly, inclusive space where women can jump into open tee times, meet new groups, share photos from the course, and grow their game with positive reinforcement at every level.",
     "image": "/images/image2.jpg"
   },
+  "founder_note": {
+    "body": "After looking for a real network for women in Utah who wanted to play golf together and not finding one, I built Girls Go Golfing Utah as a safe space for women to meet, fill open tee times, and get more women on the course. From experienced league players to women just starting out, this community is here to support your journey.",
+    "quote": "Playing golf as a woman with women is a completely different experience. Girls Go Golfing is here to prove: WE BELONG HERE.",
+    "signature": "Jan Brownstein, Creator of Girls Go Golfing",
+    "where_to_find": [
+      "Website: www.girlsgogolf.com",
+      "Facebook: Girls Go Golfing Utah (free community)",
+      "Instagram: @girlsgogolfing",
+      "X/Twitter: @girlsgogolfing"
+    ],
+    "podcast": "Girls Go Golfing Podcast: discussions about golf for women by women."
+  },
   "services": {
-    "title": "The Power of the Network",
-    "intro": "Joining Girls Go Golfing means being part of a movement that prioritizes visibility, community, and professional growth. We create the space for women to thrive both on and off the course.",
+    "title": "What You’ll Find at GGG",
+    "intro": "From beginner rounds to seasoned players, we focus on getting more women on the golf course, learning faster, and building long-term friendships through Utah golf.",
     "items": [
       {
-        "name": "Inclusive Community",
-        "description": "A welcoming environment designed for women and girls of all skill levels, from beginners to experienced players."
+        "name": "Free Facebook Community",
+        "description": "Join Girls Go Golfing Utah on Facebook to see posted tee times, available spots, and connect with women golfers across the state."
       },
       {
-        "name": "Women's Foursomes",
-        "description": "Facilitating local foursomes that increase visibility, confidence, and support on every course."
+        "name": "Open Tee Time Posts",
+        "description": "We regularly post open tee times so you can jump into rounds, meet a new group, and play courses you know or want to try."
       },
       {
-        "name": "Local Networking",
-        "description": "Connect with ambitious women through golf and build relationships that support personal and professional growth."
+        "name": "Meet & GOLF + Events",
+        "description": "Join our monthly Meet & GOLF (2nd Friday), plus outings, tournaments, and community events throughout the year."
       },
       {
-        "name": "National Access",
-        "description": "Enjoy partner-course access, broader event opportunities, and a growing network that extends beyond your city."
+        "name": "Instruction + Etiquette",
+        "description": "Build confidence through PGA-led clinics, USGA rules guidance, and practical etiquette support for every skill level."
+      },
+      {
+        "name": "Podcast + Utah Golf Voices",
+        "description": "Through the Girls Go Golfing Podcast, hear from women golfers, Utah golf pros, club leaders, and the stories behind the game."
       }
     ]
   },
@@ -111,20 +127,20 @@
     "/images/image4.jpg"
   ],
   "membership": {
-    "title": "Membership That Moves Your Game and Network Forward",
-    "subtitle": "Join Girls Go Golfing to access curated groups, structured play opportunities, and a professional community built around confidence and connection.",
+    "title": "Why Join Girls Go Golfing",
+    "subtitle": "Playing golf as a woman with women is a different experience. Join us to learn, connect, and experience Utah golf in a community that proves WE BELONG HERE.",
     "benefits": [
       {
-        "title": "Curated Local Groups",
-        "description": "Get matched into groups based on skill level, goals, and schedule so every round feels supportive and intentional."
+        "title": "Intimidation-Free Golf",
+        "description": "We welcome every skill level and help take the intimidation out of golf so you can focus on enjoying the game."
       },
       {
-        "title": "Priority Events + Clinics",
-        "description": "Members get first access to tee-time meetups, coaching clinics, and special events throughout the season."
+        "title": "Rules + Etiquette Confidence",
+        "description": "Learn USGA rules, common etiquette, and practical on-course habits so you feel confident every round."
       },
       {
-        "title": "Professional Network Access",
-        "description": "Build meaningful relationships with women across industries while sharing the course and growing your confidence."
+        "title": "Real Connections + Utah Golf Access",
+        "description": "Build authentic relationships while sharing course experiences, product feedback, and opportunities to play with women across Utah."
       }
     ],
     "plans": [
@@ -159,9 +175,9 @@
     ]
   },
   "cta_section": {
-    "title": "Ready to Play With Women Who Match Your Pace?",
-    "subtitle": "Explore membership options and choose the plan that fits your goals.",
-    "button_text": "View Membership Options",
+    "title": "Ready to Join the Movement?",
+    "subtitle": "Explore membership options, pick your plan, and come experience why women on the course together changes everything.",
+    "button_text": "We Belong Here",
     "button_link": "#membership"
   }
 }
